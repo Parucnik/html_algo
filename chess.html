@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chess</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        main {
+            display: flex;
+            flex-direction: row;
+        }
+        .table {
+            display: flex;
+            flex-direction: row;
+        }
+        .black, .white {
+            width: 60px;
+            height: 60px;
+        }
+        .black {
+            background-color:black;
+        }
+        .white {
+            background-color:white;
+        }
+        .abc {
+            position: relative;
+            display: flex;
+            flex-direction: column-reverse;
+            right: -20px;
+            height: 480px;
+        }
+        .abc > div {
+            margin: auto 0;
+            font-size: 28px;
+        }
+        .label {
+            text-align: center;
+            font-size: 28px;
+        }
+        .frame {
+            position:absolute;
+            width: 478px;
+            height: 478px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <main>
+    <div class="table">
+        <div class="frame"></div>
+        <div>
+            <div class="white"></div>
+            <div class="black"></div>
+            <div class="white"></div>
+            <div class="black"></div>
+            <div class="white"></div>
+            <div class="black"></div>
+            <div class="white"></div>
+            <div class="black"></div>
+            <div class="label">A</div>
+        </div>
+        <div>
+            <div class="black"></div>
+            <div class="white"></div>
+            <div class="black"></div>
+            <div class="white"></div>        
+            <div class="black"></div>
+            <div class="white"></div>        
+            <div class="black"></div>
+            <div class="white"></div>
+            <div class="label">B</div>
+        </div>
+        <div>
+            <div class="white"></div>
+            <div class="black"></div>
+            <div class="white"></div>
+            <div class="black"></div>
+            <div class="white"></div>
+            <div class="black"></div>
+            <div class="white"></div>
+            <div class="black"></div>
+            <div class="label">C</div>
+        </div>
+        <div>
+            <div class="black"></div>
+            <div class="white"></div>
+            <div class="black"></div>
+            <div class="white"></div>        
+            <div class="black"></div>
+            <div class="white"></div>        
+            <div class="black"></div>
+            <div class="white"></div>
+            <div class="label">D</div>
+        </div>
+        <div>
+            <div class="white"></div>
+            <div class="black"></div>
+            <div class="white"></div>
+            <div class="black"></div>
+            <div class="white"></div>
+            <div class="black"></div>
+            <div class="white"></div>
+            <div class="black"></div>
+            <div class="label">E</div>
+        </div>
+        <div>
+            <div class="black"></div>
+            <div class="white"></div>
+            <div class="black"></div>
+            <div class="white"></div>        
+            <div class="black"></div>
+            <div class="white"></div>        
+            <div class="black"></div>
+            <div class="white"></div>
+            <div class="label">F</div>
+        </div>
+        <div>
+            <div class="white"></div>
+            <div class="black"></div>
+            <div class="white"></div>
+            <div class="black"></div>
+            <div class="white"></div>
+            <div class="black"></div>
+            <div class="white"></div>
+            <div class="black"></div>
+            <div class="label">G</div>
+        </div>
+        <div>
+            <div class="black"></div>
+            <div class="white"></div>
+            <div class="black"></div>
+            <div class="white"></div>        
+            <div class="black"></div>
+            <div class="white"></div>        
+            <div class="black"></div>
+            <div class="white"></div>
+            <div class="label">H</div>
+        </div>
+        <div class="abc">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+        </div>
+    </div>
+    <div class="history">
+        <h2>История ходов</h2>
+    </div>
+    </main>
+</body>
+</html>
